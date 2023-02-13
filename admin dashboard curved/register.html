@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="redBg">
+            <div class="box signin">
+                <img src="assets/img/login/access_account.png" alt="">
+                <h2>Already have account?</h2>
+                <button class="signinBtn">Sign In</button>
+            </div>
+            <div class="box signup">
+                <img src="assets/img/login/access_account.png" alt="">
+                <h2>Don't have account? </h2>
+                <button class="signupBtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formBx">
+            <div class="form signinform">
+                <form action="#">
+                    <h3>Sign In</h3>
+                    <div>
+                        <label>Username</label>
+                        <input type="text" placeholder="Username" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="Password" placeholder="Password" autocomplete="off" required>
+                    </div>
+                    <!-- <input type="submit" value="Login"> -->
+                    <a href="index.html" class="btn">Sign In</a>
+                    <a href="#" class="forget">Forget password?</a>
+                </form>
+            </div>
+            <div class="form signupform">
+                <form action="#">
+                    <h3>Sign up</h3>
+                    <div>
+                        <label>Username</label>
+                        <input type="text" placeholder="Username" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="example@mail.com" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="Password" placeholder="Password" autocomplete="off" required>
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" autocomplete="off" required>
+                    </div>
+                    <!-- <input type="submit" value="Register"> -->
+                    <a href="#" class="btn">Sign Up</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signinBtn = document.querySelector('.signinBtn');
+        const signupBtn = document.querySelector('.signupBtn');
+        const formBx = document.querySelector('.formBx');
+        const body = document.querySelector('body');
+
+        signupBtn.onclick = function(){
+            formBx.classList.add('active')
+            body.classList.add('active')
+        }
+        signinBtn.onclick = function(){
+            formBx.classList.remove('active')
+            body.classList.remove('active')
+        }
+    </script>
+</body>
+</html>

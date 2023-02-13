@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<title>Admin Dashboard Curved</title>
+</head>
+<body>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<div class="brand">
+			<img src="../assets/img/undraw/lighthouse.png" alt="">
+			<span class="text">Admin</span>
+		</div>
+		<ul class="side-menu top">
+			<li class="divider" data-text="main">Main</li>
+			<li >
+				<a href="../index.html">
+					<i class='bx bxs-dashboard icon' ></i> 
+					<span>Dashboard</span>
+				</a>
+			</li>
+			<li >
+				<a href="order.html">
+					<i class='bx bx-spreadsheet icon'></i>
+					<span>Orders</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="#">
+					<i class='bx bx-spreadsheet icon'></i>
+					<span>Products</span>
+				</a>
+			</li>
+		</li>
+			<li class="divider" data-text="Report">Report</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-notepad icon' ></i> 
+					<span class="dropdown">Reports</span> 
+					<i class='bx bxs-caret-right-circle icon-right' ></i>
+				</a>
+				<ul class="droplist">
+					<li>
+						<a href="#"><i class='bx bxs-circle icon' ></i>Daily</a>
+					</li>
+					<li>
+						<a href="#"><i class='bx bxs-circle icon' ></i>Weekly</a>
+					</li>
+					<li>
+						<a href="#"><i class='bx bxs-circle icon' ></i>Monthly</a>
+					</li>
+				</ul>
+			</li>
+			
+			<!-- profile -->
+			<li class="profile">
+				<div class="profile-details">
+					<div class="profile-content">
+						<img src="assets/img/users/profile.png" alt="profileImg">
+					</div>
+					<div class="name-job">
+						<div class="name">John Doe</div>
+						<div class="job">Administrator</div>
+					</div>
+					<a href="../register.html">
+						<i class='bx bx-log-out'></i>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<!-- <i class='bx bx-menu' ></i> -->
+			<i class='bx bx-menu-alt-left toggle-sidebar'></i>
+			<div class="nav-link">Menu</div>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" id="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<div class="notif">
+				<div class="nav-link">
+					<i class='bx bxs-bell icon' ></i>
+					<span class="badge">3</span>
+				</div>
+				<ul class="notif-link">
+					<li><a href="#"><i class='bx bxs-message-square-dots' ></i> New Message</a></li>
+					<li><a href="#"><i class='bx bxs-message-square-dots' ></i> New Message</a></li>
+					<li><a href="#"><i class='bx bxs-message-square-dots' ></i> New Message</a></li>
+					<li><a href="#" class="show-all"> Show All</a></li>
+				</ul>
+			</div>
+
+			<!-- theme light/dark -->
+			<i class='bx bx-moon change-theme' title="theme" id="theme-button"></i>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+
+			<section>
+				<div class="alert show alert-info" id="alert">
+					<span class="icon info">
+						<i class='bx bx-info-circle icon'></i>
+					</span>
+					<div class="text info">
+						<span>Info</span>
+						<p>Process Done.</p>
+					</div>
+					<div class="progress"></div>
+					<button class="close info">
+						<i class='bx bxs-x-circle' ></i>
+					</button>
+				</div>
+
+				<!-- <div class="alert show alert-success" id="alert">
+				<span class="icon success">
+					<i class='bx bx-check-circle icon'></i>
+				</span>
+				<div class="text success">
+					<span>Success</span>
+					<p>Successfully Approved.</p>
+				</div>
+				<div class="progress"></div>
+				<button class="close success">
+					<i class='bx bxs-x-circle' ></i>
+				</button>
+			</div> -->
+			
+			<!-- <div class="alert show alert-warning" id="alert">
+				<span class="icon warning">
+					<i class='bx bx-x-circle icon'></i>
+				</span>
+				<div class="text warning">
+					<span>Warning!</span>
+					<p>Data is not valid!!</p>
+				</div>
+				<div class="progress"></div>
+				<button class="close warning">
+					<i class='bx bxs-x-circle' ></i>
+				</button>
+			</div> -->
+
+			<!-- <div class="alert show alert-danger" id="alert">
+				<span class="icon danger">
+					<i class='bx bx-error-circle'></i>
+				</span>
+				<div class="text danger">
+					<span>Error!</span>
+					<p>Successfully Rejected</p>
+				</div>
+				<div class="progress"></div>
+				<button class="close danger">
+					<i class='bx bxs-x-circle' ></i>
+				</button>
+			</div> -->
+			</section>
+
+			<section>
+				<div class="card">
+					<div class="content-data">
+						<div class="head">
+							<h3>Products</h3>
+							<div class="menu">
+								<i class='bx bx-dots-horizontal-rounded icon'></i>
+								<ul class="menu-link">
+									<li><a href="#">Edit</a></li>
+									<li><a href="#">Save</a></li>
+									<li><a href="#">Remove</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-products">
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+	
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+							<div class="product">
+								<div class="images">
+									<img src="../assets/img/undraw/lighthouse.png" alt="">
+								</div>
+								<div class="name-price">
+									<h3>Product Name</h3>
+									<span>IDR 45K</span>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								<div class="stars">
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+									<i class='bx bxs-star' ></i>
+								</div>
+								<div class="buy">
+									<button class="modal-open action info" data-modal="modal-detail">Detail</button>
+									<button>Buy Now</button>
+								</div>
+							</div>
+						</div>
+						<div class="modal" id="modal-detail">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h2>Modal Detail</h2>
+									<span class="modal-close"><i class='bx bxs-x-circle'></i></span>
+								</div>
+								<div class="modal-body">
+									<div class="images">
+										<img src="../assets/img/undraw/lighthouse.png" alt="">
+									</div>
+									<div class="name-price">
+										<h3>Product Name</h3>
+										<span>IDR 45K</span>
+									</div>
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+									<div class="stars">
+										<i class='bx bxs-star' ></i>
+										<i class='bx bxs-star' ></i>
+										<i class='bx bxs-star' ></i>
+										<i class='bx bxs-star' ></i>
+										<i class='bx bxs-star' ></i>
+									</div>
+									<div class="form">
+										<form action="">
+											<textarea id="" rows="10" placeholder="Your Request..."></textarea>
+										</form>
+									</div>
+									<div class="wraper">
+										<span class="minus">-</span>
+										<span class="num">0</span>
+										<span class="plus">+</span>
+									</div>
+								</div>
+								<button class="action info"><i class='bx bxs-cart-add' ></i> | Add Cart</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+	<script src="../assets/js/script.js"></script>
+</html>
